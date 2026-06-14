@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Flame, Fuel, Bath, Siren, ArrowRight } from "lucide-react";
+import { Flame, Fuel, Bath, Siren, ArrowRight, Camera } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Reveal from "./Reveal";
 
@@ -34,54 +34,86 @@ const dimmed =
 export default function Services() {
   return (
     <section id="leistungen" className="relative overflow-hidden bg-white py-16">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-8">
-        {/* Links: Text */}
-        <Reveal>
+      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        {/* Überschrift */}
+        <Reveal className="max-w-2xl">
           <span className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-600">
             Unsere Leistungen
           </span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Alles rund um Heizung, Sanitär &amp; Wasser
           </h2>
-          <p className="mt-4 max-w-md text-base leading-relaxed text-gray-600">
-            Ein Ansprechpartner für den kompletten Bereich der Haustechnik.
-            Kompetent, sauber und zuverlässig. Fahren Sie über die Karten, um die
-            einzelnen Leistungen zu entdecken.
+          <p className="mt-4 text-base leading-relaxed text-gray-600">
+            Ihr Meisterbetrieb für den kompletten Bereich der Haustechnik.
+            Kompetent, sauber und zuverlässig.
           </p>
+        </Reveal>
+
+        <div className="mt-12 grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
+          {/* Links: CEO-Foto */}
+          <Reveal>
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-gray-200 shadow-xl">
+              {/* Fallback, falls kein Foto hinterlegt ist */}
+              <div className="absolute inset-0 grid place-items-center bg-orange-50 text-center">
+                <div>
+                  <Camera className="mx-auto h-10 w-10 text-orange-300" aria-hidden="true" />
+                  <p className="mt-3 text-sm font-medium text-orange-500">Gründer-Foto</p>
+                  <p className="mt-1 text-xs text-gray-400">
+                    Bild unter <span className="font-mono">public/gruender.jpg</span> ablegen
+                  </p>
+                </div>
+              </div>
+              {/* Foto */}
+              <div
+                className="absolute inset-0 bg-cover bg-no-repeat"
+                style={{ backgroundImage: "url('/gruender.jpg.jpeg')", backgroundPosition: "right center" }}
+              />
+              {/* Verlauf + Namens-Karte */}
+              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/55 to-transparent" />
+              <div className="absolute bottom-4 left-4 rounded-xl bg-white/90 px-4 py-2.5 shadow-md backdrop-blur">
+                <p className="text-sm font-bold text-gray-900">Inhaber &amp; Heizungsbaumeister</p>
+                <p className="text-xs text-gray-500">Ramani Heizung</p>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Rechts: animiertes Karten-Deck */}
+          <Reveal direction="left" className="flex justify-center lg:justify-end">
+            <div className="grid place-items-center [grid-template-areas:'stack']">
+              {services.map((s, i) => {
+                const Icon = s.icon;
+                const isFront = i === services.length - 1;
+                return (
+                  <div
+                    key={s.title}
+                    className={cn(baseCard, offsets[i], !isFront && dimmed)}
+                  >
+                    <div>
+                      <span className="relative inline-flex rounded-full bg-gradient-to-br from-orange-500 to-orange-400 p-1.5">
+                        <Icon className="size-4 text-white" aria-hidden="true" />
+                      </span>
+                      <p className="text-lg font-semibold text-gray-900">{s.title}</p>
+                    </div>
+                    <p className="whitespace-nowrap text-sm text-gray-600">{s.desc}</p>
+                    <p className="text-xs font-medium uppercase tracking-wider text-orange-500">
+                      {s.tag}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </Reveal>
+        </div>
+
+        {/* CTA */}
+        <Reveal className="mt-12 flex justify-center">
           <a
             href="#kontakt"
-            className="group mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.04]"
+            className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.04]"
           >
             Angebot anfordern
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
           </a>
-        </Reveal>
-
-        {/* Rechts: animiertes Karten-Deck */}
-        <Reveal direction="left" className="flex justify-center lg:justify-end">
-          <div className="grid place-items-center [grid-template-areas:'stack']">
-            {services.map((s, i) => {
-              const Icon = s.icon;
-              const isFront = i === services.length - 1;
-              return (
-                <div
-                  key={s.title}
-                  className={cn(baseCard, offsets[i], !isFront && dimmed)}
-                >
-                  <div>
-                    <span className="relative inline-flex rounded-full bg-gradient-to-br from-orange-500 to-orange-400 p-1.5">
-                      <Icon className="size-4 text-white" aria-hidden="true" />
-                    </span>
-                    <p className="text-lg font-semibold text-gray-900">{s.title}</p>
-                  </div>
-                  <p className="whitespace-nowrap text-sm text-gray-600">{s.desc}</p>
-                  <p className="text-xs font-medium uppercase tracking-wider text-orange-500">
-                    {s.tag}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
         </Reveal>
       </div>
     </section>
