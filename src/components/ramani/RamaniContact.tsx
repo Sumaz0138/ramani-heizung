@@ -17,7 +17,7 @@ export default function RamaniContact() {
               Lassen Sie uns über Ihr Projekt sprechen
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-gray-600">
-              Ob Beratung, Angebot oder Notfall – wir sind für Sie da. Schreiben Sie
+              Ob Beratung, Angebot oder Notfall: Wir sind für Sie da. Schreiben Sie
               uns oder rufen Sie an, wir melden uns schnellstmöglich zurück.
             </p>
 

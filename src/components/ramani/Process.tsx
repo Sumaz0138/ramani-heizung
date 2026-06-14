@@ -6,7 +6,7 @@ const steps = [
   {
     icon: Phone,
     title: "Kontakt aufnehmen",
-    desc: "Sie erreichen uns per Telefon oder Formular – wir hören zu und vereinbaren einen Termin.",
+    desc: "Sie erreichen uns per Telefon oder Formular. Wir hören zu und vereinbaren einen Termin.",
   },
   {
     icon: ClipboardCheck,
@@ -16,7 +16,7 @@ const steps = [
   {
     icon: FileText,
     title: "Transparentes Angebot",
-    desc: "Sie erhalten ein klares, faires Festpreisangebot – ganz ohne versteckte Kosten.",
+    desc: "Sie erhalten ein klares, faires Festpreisangebot, ganz ohne versteckte Kosten.",
   },
   {
     icon: Wrench,
@@ -32,7 +32,7 @@ export default function Process() {
         <SectionHeading
           eyebrow="So arbeiten wir"
           title="In vier Schritten zum Ziel"
-          subtitle="Ein klarer, transparenter Ablauf – damit Sie von Anfang an wissen, woran Sie sind."
+          subtitle="Ein klarer, transparenter Ablauf, damit Sie von Anfang an wissen, woran Sie sind."
         />
 
         <div className="relative mt-12">

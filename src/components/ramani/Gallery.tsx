@@ -63,7 +63,7 @@ export default function Gallery() {
         <SectionHeading
           eyebrow="Referenzen"
           title="Ausgewählte Projekte"
-          subtitle="Ein Einblick in unsere Arbeit – klicken Sie ein Projekt an für mehr Details."
+          subtitle="Ein Einblick in unsere Arbeit. Klicken Sie ein Projekt an für mehr Details."
         />
 
         <div className="mt-10 grid auto-rows-[200px] gap-4 sm:grid-cols-2 lg:grid-cols-3">

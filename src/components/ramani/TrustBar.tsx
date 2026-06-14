@@ -36,14 +36,12 @@ export default function TrustBar() {
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-orange-50/80 to-transparent" />
 
         <div className="marquee__track">
-          {/* erster Satz */}
-          {items.map((it) => (
-            <Item key={`a-${it.label}`} icon={it.icon} label={it.label} />
-          ))}
-          {/* zweiter Satz (Duplikat für nahtlose Schleife) */}
-          {items.map((it) => (
-            <Item key={`b-${it.label}`} icon={it.icon} label={it.label} />
-          ))}
+          {/* Mehrfach dupliziert für einen lückenlosen, nahtlosen Endlos-Loop */}
+          {["a", "b", "c", "d"].map((set) =>
+            items.map((it) => (
+              <Item key={`${set}-${it.label}`} icon={it.icon} label={it.label} />
+            ))
+          )}
         </div>
       </div>
     </section>

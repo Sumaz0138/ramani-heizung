@@ -28,7 +28,7 @@ export async function sendRamaniContact(
       from: "Ramani Heizung Kontaktformular <onboarding@resend.dev>",
       to: process.env.RAMANI_CONTACT_EMAIL ?? "info@ramani-heizung.de",
       replyTo: email,
-      subject: `Neue Anfrage von ${name}${service ? ` – ${service}` : ""}`,
+      subject: `Neue Anfrage von ${name}${service ? `: ${service}` : ""}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>E-Mail:</strong> ${email}</p>

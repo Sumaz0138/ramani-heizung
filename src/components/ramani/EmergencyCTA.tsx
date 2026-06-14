@@ -26,7 +26,7 @@ export default function EmergencyCTA() {
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-white/90">
                   Im Notfall zählt jede Minute. Unser Notdienst ist rund um die Uhr
-                  erreichbar und schnell bei Ihnen vor Ort – kompetent und mit der
+                  erreichbar und schnell bei Ihnen vor Ort, kompetent und mit der
                   richtigen Ausrüstung.
                 </p>
                 <div className="mt-5 flex items-center gap-2 text-sm text-white/90">

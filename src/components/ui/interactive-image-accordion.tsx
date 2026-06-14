@@ -113,12 +113,15 @@ export function LandingAccordionItem() {
               {COMPANY.tagline}
             </span>
             <h1 className="mt-6 text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tighter">
-              Wärme, Wasser & Sicherheit aus Meisterhand
+              Qualitätsservice{" "}
+              <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">
+                aus der Region
+              </span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
-              Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser – schnelle
-              Reaktionszeiten, saubere Arbeit und moderne Technik. Vom Notfall bis
-              zur kompletten Badsanierung.
+              Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser. Wir stehen
+              für schnelle Reaktionszeiten, saubere Arbeit und moderne Technik,
+              vom Notfall bis zur kompletten Badsanierung.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
               <a

@@ -36,8 +36,8 @@ export default function RamaniFooter() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-600">
-              Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser –
-              traditionelles Handwerk verbunden mit moderner Technik.
+              Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser.
+              Traditionelles Handwerk verbunden mit moderner Technik.
             </p>
             <a
               href={COMPANY.emergencyPhoneHref}

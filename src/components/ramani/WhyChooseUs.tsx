@@ -28,17 +28,17 @@ const benefits = [
   {
     icon: CalendarCheck,
     title: "Verlässliche Termine",
-    desc: "Pünktlichkeit ist für uns selbstverständlich – Sie können sich auf uns verlassen.",
+    desc: "Pünktlichkeit ist für uns selbstverständlich. Sie können sich auf uns verlassen.",
   },
   {
     icon: Siren,
     title: "Notfall-Verfügbarkeit",
-    desc: "Rund um die Uhr erreichbar – auch an Wochenenden und Feiertagen.",
+    desc: "Rund um die Uhr erreichbar, auch an Wochenenden und Feiertagen.",
   },
   {
     icon: HeartHandshake,
     title: "Langfristige Betreuung",
-    desc: "Wartung, Service und Beratung – wir bleiben Ihr Partner über das Projekt hinaus.",
+    desc: "Wartung, Service und Beratung: Wir bleiben Ihr Partner über das Projekt hinaus.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
         <SectionHeading
           eyebrow="Warum Ramani Heizung"
           title="Gute Gründe für Ihre Wahl"
-          subtitle="Was uns ausmacht – und warum unsere Kunden uns immer wieder weiterempfehlen."
+          subtitle="Was uns ausmacht und warum unsere Kunden uns immer wieder weiterempfehlen."
         />
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

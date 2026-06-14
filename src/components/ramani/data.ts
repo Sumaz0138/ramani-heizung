@@ -17,8 +17,8 @@ export const COMPANY = {
   serviceArea: "Rhein-Neckar-Region & Umkreis 50 km", // Platzhalter
   address: "Musterstraße 1, 00000 Musterstadt", // Platzhalter
   hours: [
-    { day: "Mo – Fr", time: "07:00 – 18:00 Uhr" },
-    { day: "Samstag", time: "08:00 – 14:00 Uhr" },
+    { day: "Mo bis Fr", time: "07:00 bis 18:00 Uhr" },
+    { day: "Samstag", time: "08:00 bis 14:00 Uhr" },
     { day: "Notdienst", time: "24 / 7 erreichbar" },
   ],
 } as const;

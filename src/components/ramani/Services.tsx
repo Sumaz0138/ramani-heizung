@@ -28,7 +28,7 @@ const services: Service[] = [
   {
     icon: Flame,
     title: "Heizungsinstallation",
-    desc: "Moderne, effiziente Heizsysteme – von der Wärmepumpe bis zur Gasbrennwerttherme.",
+    desc: "Moderne, effiziente Heizsysteme von der Wärmepumpe bis zur Gasbrennwerttherme.",
     examples: [
       { project: "Neubau Einfamilienhaus", detail: "Wärmepumpe + Fußbodenheizung, Musterstadt" },
       { project: "Altbau-Sanierung", detail: "Umstieg auf Gasbrennwert, −28 % Verbrauch" },
@@ -55,7 +55,7 @@ const services: Service[] = [
   {
     icon: Droplets,
     title: "Wasserinstallation",
-    desc: "Trinkwasser- und Abwasserleitungen, Armaturen und Anschlüsse – sauber verlegt.",
+    desc: "Trinkwasser- und Abwasserleitungen, Armaturen und Anschlüsse, sauber und langlebig verlegt.",
     examples: [
       { project: "Trinkwasserleitung erneuert", detail: "Komplettstrang, Reihenhaus" },
       { project: "Außenzapfstelle", detail: "Frostsicher inkl. Gartenleitung" },
@@ -73,7 +73,7 @@ const services: Service[] = [
   {
     icon: Search,
     title: "Leckortung",
-    desc: "Präzise Ortung verdeckter Leckagen mit moderner Messtechnik – minimalinvasiv.",
+    desc: "Präzise Ortung verdeckter Leckagen mit moderner Messtechnik, minimalinvasiv und schnell.",
     examples: [
       { project: "Verdeckte Leckage", detail: "Kellerwand punktgenau geortet" },
       { project: "Feuchteschaden Bad", detail: "Ursache ohne Aufstemmen gefunden" },
@@ -82,7 +82,7 @@ const services: Service[] = [
   {
     icon: Wrench,
     title: "Rohrreparatur",
-    desc: "Verstopfungen, undichte Stellen oder Rohrbruch – schnell und dauerhaft.",
+    desc: "Verstopfungen, undichte Stellen oder Rohrbruch beheben wir schnell und dauerhaft.",
     examples: [
       { project: "Rohrbruch-Soforthilfe", detail: "Einsatz am Wochenende" },
       { project: "Hauptleitung", detail: "Verstopfung nachhaltig behoben" },

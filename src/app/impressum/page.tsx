@@ -21,7 +21,7 @@ export default function ImpressumPage() {
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">Impressum</h1>
 
         <div className="mt-4 rounded-xl border border-dashed border-orange-300 bg-orange-50 p-4 text-sm text-orange-700">
-          Vorlage – bitte alle [Platzhalter] durch die echten Angaben ersetzen und vor
+          Vorlage: Bitte alle [Platzhalter] durch die echten Angaben ersetzen und vor
           Veröffentlichung rechtlich prüfen lassen.
         </div>
 
@@ -29,7 +29,7 @@ export default function ImpressumPage() {
         <p className="mt-3 leading-relaxed text-gray-600">
           [Firmenname, z. B. Ramani Heizung &amp; Sanitär GmbH]
           <br />
-          [Vorname Nachname – vertretungsberechtigte Person]
+          [Vorname Nachname, vertretungsberechtigte Person]
           <br />
           [Straße Hausnummer]
           <br />

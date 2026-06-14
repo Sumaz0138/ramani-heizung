@@ -23,7 +23,7 @@ export default function DatenschutzPage() {
         </h1>
 
         <div className="mt-4 rounded-xl border border-dashed border-orange-300 bg-orange-50 p-4 text-sm text-orange-700">
-          Vorlage – bitte [Platzhalter] ausfüllen und vor Veröffentlichung rechtlich prüfen
+          Vorlage: Bitte [Platzhalter] ausfüllen und vor Veröffentlichung rechtlich prüfen
           lassen (z. B. Rechtsanwalt oder Datenschutzbeauftragten).
         </div>
 

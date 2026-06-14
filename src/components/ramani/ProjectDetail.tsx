@@ -70,7 +70,7 @@ export default function ProjectDetail({
               },
               {
                 h: "Das Ergebnis",
-                t: "Hier zeigen wir das fertige Ergebnis – inkl. Vorher-/Nachher-Bildern und der Rückmeldung des Kunden.",
+                t: "Hier zeigen wir das fertige Ergebnis, inklusive Vorher-/Nachher-Bildern und der Rückmeldung des Kunden.",
               },
             ].map((b) => (
               <section key={b.h}>
@@ -83,7 +83,7 @@ export default function ProjectDetail({
             ))}
 
             <div className="rounded-xl border border-dashed border-orange-300 bg-orange-50 p-5 text-sm text-orange-700">
-              Diese Seite ist ein Grundgerüst – Inhalte und Bilder zu diesem Projekt
+              Diese Seite ist ein Grundgerüst. Inhalte und Bilder zu diesem Projekt
               ergänzen wir individuell.
             </div>
           </div>

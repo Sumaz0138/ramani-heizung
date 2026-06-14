@@ -31,7 +31,7 @@ export default function About() {
             <p className="mt-5 text-base leading-relaxed text-gray-600">
               Seit vielen Jahren stehen wir für solides Handwerk und ehrliche
               Beratung. Wir verbinden die Erfahrung des klassischen Heizungs- und
-              Sanitärbaus mit modernster Technik – von energieeffizienten
+              Sanitärbaus mit modernster Technik, von energieeffizienten
               Wärmepumpen bis zur digitalen Leckortung. So erhalten Sie Lösungen,
               die heute funktionieren und morgen noch überzeugen.
             </p>
