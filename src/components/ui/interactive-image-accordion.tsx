@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, ArrowRight } from "lucide-react";
-import { COMPANY } from "@/components/ramani/data";
 
 // --- Typen ---
 interface AccordionItemData {
@@ -120,25 +118,6 @@ export function LandingAccordionItem() {
               für schnelle Reaktionszeiten, saubere Arbeit und moderne Technik,
               vom Notfall bis zur kompletten Badsanierung.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
-              <a
-                href="#kontakt"
-                className="group inline-flex items-center justify-center gap-2 rounded-lg bg-orange-500 px-8 py-3 font-semibold text-white shadow-lg shadow-orange-500/30 transition-all duration-300 hover:bg-orange-600 hover:scale-[1.03]"
-              >
-                Angebot anfordern
-                <ArrowRight
-                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </a>
-              <a
-                href={COMPANY.emergencyPhoneHref}
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-8 py-3 font-semibold text-gray-900 transition-colors duration-300 hover:border-gray-900 hover:bg-gray-50"
-              >
-                <Phone className="h-4 w-4 text-orange-500" aria-hidden="true" />
-                24/7 Notdienst
-              </a>
-            </div>
           </div>
 
           {/* Rechte Seite: Bild-Akkordeon */}

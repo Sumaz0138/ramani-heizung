@@ -90,22 +90,24 @@ export default function RamaniContact() {
                       Wir sind für Sie da. Hinterlassen Sie uns kurz Ihre Daten,
                       wir melden uns schnellstmöglich zurück.
                     </p>
-                    <div className="flex flex-wrap items-center gap-3">
+                    <div className="flex flex-col items-start gap-4">
                       <ContactDialog />
-                      <a
-                        href={COMPANY.phoneHref}
-                        aria-label="Anrufen"
-                        className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-orange-400 hover:text-orange-600"
-                      >
-                        <Phone className="h-5 w-5" aria-hidden="true" />
-                      </a>
-                      <a
-                        href={COMPANY.emailHref}
-                        aria-label="E-Mail schreiben"
-                        className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-orange-400 hover:text-orange-600"
-                      >
-                        <Mail className="h-5 w-5" aria-hidden="true" />
-                      </a>
+                      <div className="flex items-center gap-3">
+                        <a
+                          href={COMPANY.phoneHref}
+                          aria-label="Anrufen"
+                          className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-orange-400 hover:text-orange-600"
+                        >
+                          <Phone className="h-5 w-5" aria-hidden="true" />
+                        </a>
+                        <a
+                          href={COMPANY.emailHref}
+                          aria-label="E-Mail schreiben"
+                          className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-orange-400 hover:text-orange-600"
+                        >
+                          <Mail className="h-5 w-5" aria-hidden="true" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

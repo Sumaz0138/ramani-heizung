@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Flame, Fuel, Bath, Siren, ArrowRight, Camera } from "lucide-react";
+import { Flame, Fuel, Bath, Siren, Camera } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Reveal from "./Reveal";
 
@@ -49,7 +49,7 @@ export default function Services() {
         <div className="mt-12 grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
           {/* Links: CEO-Foto */}
           <Reveal>
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-gray-200 shadow-xl">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-gray-200 shadow-xl lg:mx-0 lg:-ml-2">
               {/* Fallback, falls kein Foto hinterlegt ist */}
               <div className="absolute inset-0 grid place-items-center bg-orange-50 text-center">
                 <div>
@@ -101,17 +101,6 @@ export default function Services() {
             </div>
           </Reveal>
         </div>
-
-        {/* CTA */}
-        <Reveal className="mt-12 flex justify-center">
-          <a
-            href="#kontakt"
-            className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.04]"
-          >
-            Angebot anfordern
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-          </a>
-        </Reveal>
       </div>
     </section>
   );

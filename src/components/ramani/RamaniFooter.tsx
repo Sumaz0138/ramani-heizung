@@ -4,17 +4,6 @@ import { usePathname } from "next/navigation";
 import { Flame, Phone, Mail, MapPin, Clock, Siren } from "lucide-react";
 import { COMPANY } from "./data";
 
-const footerServices = [
-  "Heizungsinstallation",
-  "Heizungswartung",
-  "Gasinstallation",
-  "Wasserinstallation",
-  "Badsanierung",
-  "Leckortung",
-  "Rohrreparatur",
-  "Notdienst 24/7",
-];
-
 export default function RamaniFooter() {
   const year = new Date().getFullYear();
   const pathname = usePathname();
@@ -24,7 +13,7 @@ export default function RamaniFooter() {
   return (
     <footer className="border-t border-gray-200 bg-orange-50/50">
       <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           {/* Marke */}
           <div>
             <div className="flex items-center gap-2.5">
@@ -46,25 +35,6 @@ export default function RamaniFooter() {
               <Siren className="h-4 w-4" aria-hidden="true" />
               Notdienst: {COMPANY.emergencyPhone}
             </a>
-          </div>
-
-          {/* Leistungen */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900">
-              Leistungen
-            </h3>
-            <ul className="mt-4 space-y-2.5">
-              {footerServices.map((s) => (
-                <li key={s}>
-                  <a
-                    href={to("leistungen")}
-                    className="text-sm text-gray-600 transition-colors hover:text-orange-600"
-                  >
-                    {s}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Kontakt */}
