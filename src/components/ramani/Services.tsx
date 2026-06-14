@@ -17,16 +17,16 @@ const services: Service[] = [
   { icon: Siren, title: "Notdienst", desc: "Reparatur & Leckortung", tag: "24/7 erreichbar" },
 ];
 
-// Versatz pro Karte im Stapel (von hinten-oben-links nach vorne-unten-rechts)
+// Versatz + feste Z-Reihenfolge pro Karte (hinten-oben-links nach vorne-unten-rechts)
 const offsets = [
-  "translate-x-0 translate-y-0",
-  "translate-x-12 translate-y-6",
-  "translate-x-24 translate-y-12",
-  "translate-x-36 translate-y-18",
+  "translate-x-0 translate-y-0 z-10",
+  "translate-x-12 translate-y-6 z-20",
+  "translate-x-24 translate-y-12 z-30",
+  "translate-x-36 translate-y-18 z-40",
 ];
 
 const baseCard =
-  "[grid-area:stack] relative flex h-36 w-[18rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 border-gray-200 bg-white/80 px-4 py-3 shadow-md backdrop-blur-sm transition-all duration-500 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-[18rem] after:bg-gradient-to-l after:from-white after:to-transparent after:content-[''] hover:border-orange-300 hover:bg-white hover:z-50 hover:-translate-y-2 [&>*]:flex [&>*]:items-center [&>*]:gap-2";
+  "[grid-area:stack] relative flex h-36 w-[18rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 border-gray-200 bg-white px-4 py-3 shadow-md transition-all duration-500 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-[18rem] after:bg-gradient-to-l after:from-white after:to-transparent after:content-[''] hover:border-orange-300 [&>*]:flex [&>*]:items-center [&>*]:gap-2";
 
 const dimmed =
   "grayscale before:absolute before:inset-0 before:rounded-xl before:bg-white/55 before:content-[''] before:transition-opacity before:duration-500 hover:grayscale-0 hover:before:opacity-0";
