@@ -25,8 +25,5 @@ export const COMPANY = {
 
 export const NAV_LINKS = [
   { hash: "leistungen", label: "Leistungen" },
-  { hash: "ablauf", label: "Ablauf" },
-  { hash: "vorteile", label: "Vorteile" },
-  { hash: "projekte", label: "Projekte" },
   { hash: "kontakt", label: "Kontakt" },
 ] as const;
