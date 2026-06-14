@@ -1,0 +1,17 @@
+Gründer-Foto für die "Über uns"-Sektion
+=======================================
+
+Lege dein Foto in diesem Ordner ab und benenne es exakt:
+
+    gruender.jpg
+
+Empfehlung:
+- Hochformat bzw. quadratisch (die Anzeige ist 4:5).
+- Die Sektion ist auf die RECHTE Person im Selfie ausgerichtet
+  (Bildausschnitt "rechts"). Ein bereits zugeschnittenes Porträt
+  sieht am besten aus.
+- Alternativ einfach das Selfie als gruender.jpg ablegen – der
+  Bildausschnitt zeigt automatisch die rechte Seite.
+
+Solange keine Datei vorhanden ist, zeigt die Sektion einen
+sauberen Platzhalter ("Gründer-Foto") an.
