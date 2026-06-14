@@ -1,15 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import {
-  Flame,
-  Gauge,
-  Fuel,
-  Droplets,
-  Bath,
-  Search,
-  Wrench,
-  Siren,
-  ArrowRight,
-} from "lucide-react";
+import { Flame, Fuel, Bath, Siren, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Reveal from "./Reveal";
 
@@ -21,26 +11,18 @@ type Service = {
 };
 
 const services: Service[] = [
-  { icon: Flame, title: "Heizungsinstallation", desc: "Effiziente Heizsysteme bis zur Wärmepumpe.", tag: "Heizung" },
-  { icon: Gauge, title: "Heizungswartung", desc: "Volle Leistung, niedrige Kosten, lange Lebensdauer.", tag: "Wartung" },
-  { icon: Fuel, title: "Gas-Systemservice", desc: "Sichere Installation und Prüfung nach Norm.", tag: "Gas" },
-  { icon: Droplets, title: "Wasserinstallation", desc: "Leitungen, Armaturen und Anschlüsse, sauber verlegt.", tag: "Wasser" },
-  { icon: Bath, title: "Badsanierung", desc: "Ihr Traumbad aus einer Hand.", tag: "Sanitär" },
-  { icon: Search, title: "Leckortung", desc: "Verdeckte Leckagen präzise geortet.", tag: "Diagnose" },
-  { icon: Wrench, title: "Rohrreparatur", desc: "Verstopfung oder Rohrbruch, schnell behoben.", tag: "Reparatur" },
-  { icon: Siren, title: "Notreparaturen", desc: "Rund um die Uhr im Einsatz für Sie.", tag: "24/7 Notdienst" },
+  { icon: Flame, title: "Heizung", desc: "Installation & Wartung", tag: "Wärmepumpe · Gas" },
+  { icon: Bath, title: "Bad & Sanitär", desc: "Sanierung & Installation", tag: "Bäder · Wasser" },
+  { icon: Fuel, title: "Gas-Service", desc: "Prüfung nach Norm", tag: "Sicher & geprüft" },
+  { icon: Siren, title: "Notdienst", desc: "Reparatur & Leckortung", tag: "24/7 erreichbar" },
 ];
 
 // Versatz pro Karte im Stapel (von hinten-oben-links nach vorne-unten-rechts)
 const offsets = [
   "translate-x-0 translate-y-0",
-  "translate-x-6 translate-y-3",
   "translate-x-12 translate-y-6",
-  "translate-x-18 translate-y-9",
   "translate-x-24 translate-y-12",
-  "translate-x-30 translate-y-15",
   "translate-x-36 translate-y-18",
-  "translate-x-44 translate-y-24",
 ];
 
 const baseCard =
