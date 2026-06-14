@@ -35,11 +35,11 @@ export default function RamaniContact() {
     "absolute rounded-3xl border border-orange-200 bg-orange-50 px-2 py-1.5 text-xs font-medium text-orange-700 opacity-50";
 
   return (
-    <section id="kontakt" className="relative bg-white py-16">
-      <div className="relative mx-auto max-w-5xl px-5 sm:px-8">
+    <section id="kontakt" className="relative bg-white py-10">
+      <div className="relative mx-auto max-w-4xl px-5 sm:px-8">
         <HighlightGroup className="group h-full">
           <div className="group/item h-full">
-            <HighlighterItem className="rounded-3xl p-6">
+            <HighlighterItem className="rounded-3xl p-4">
               <div className="relative z-20 h-full overflow-hidden rounded-3xl border border-gray-200 bg-white">
                 <Particles
                   className="absolute inset-0 -z-10 opacity-10 transition-opacity duration-1000 ease-in-out group-hover/item:opacity-100"
@@ -48,7 +48,7 @@ export default function RamaniContact() {
                   vy={-0.2}
                 />
                 <div className="flex justify-center">
-                  <div className="flex h-full flex-col justify-center gap-10 p-4 md:h-[300px] md:flex-row">
+                  <div className="flex h-full flex-col justify-center gap-4 p-2 md:h-[260px] md:flex-row">
                     {/* Animierter Zeiger + Tags */}
                     <div className="relative mx-auto h-[270px] w-[300px]" ref={scope}>
                       <span className="absolute left-1/2 top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-2xl bg-gradient-to-br from-orange-500 to-orange-400 shadow-lg shadow-orange-500/30">
@@ -89,14 +89,14 @@ export default function RamaniContact() {
                     </div>
 
                     {/* Text + Aktionen */}
-                    <div className="-mt-20 flex h-full flex-col justify-center p-2 md:-mt-4 md:ml-10 md:w-[400px]">
-                      <span className="self-start rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-600">
+                    <div className="-mt-16 flex h-full flex-col justify-center p-2 md:-mt-4 md:ml-8 md:w-[340px]">
+                      <span className="self-start rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-600">
                         Kontakt
                       </span>
-                      <h3 className="mt-5 pb-1 text-2xl font-bold text-gray-900 md:text-4xl">
+                      <h3 className="mt-3 text-2xl font-bold text-gray-900 md:text-3xl">
                         Fragen zu Ihrem Projekt?
                       </h3>
-                      <p className="mb-6 text-gray-600">
+                      <p className="mb-4 mt-2 text-sm text-gray-600">
                         Wir sind für Sie da. Hinterlassen Sie uns kurz Ihre Daten,
                         wir melden uns schnellstmöglich zurück.
                       </p>
