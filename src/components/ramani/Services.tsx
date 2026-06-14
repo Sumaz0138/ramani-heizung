@@ -8,9 +8,9 @@ import {
   Search,
   Wrench,
   Siren,
+  ArrowRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
 type Service = {
@@ -26,7 +26,7 @@ const services: Service[] = [
   { icon: Fuel, title: "Gas-Systemservice", desc: "Sichere Installation und Prüfung nach Norm.", tag: "Gas" },
   { icon: Droplets, title: "Wasserinstallation", desc: "Leitungen, Armaturen und Anschlüsse, sauber verlegt.", tag: "Wasser" },
   { icon: Bath, title: "Badsanierung", desc: "Ihr Traumbad aus einer Hand.", tag: "Sanitär" },
-  { icon: Search, title: "Leckortung", desc: "Verdeckte Leckagen präzise und minimalinvasiv geortet.", tag: "Diagnose" },
+  { icon: Search, title: "Leckortung", desc: "Verdeckte Leckagen präzise geortet.", tag: "Diagnose" },
   { icon: Wrench, title: "Rohrreparatur", desc: "Verstopfung oder Rohrbruch, schnell behoben.", tag: "Reparatur" },
   { icon: Siren, title: "Notreparaturen", desc: "Rund um die Uhr im Einsatz für Sie.", tag: "24/7 Notdienst" },
 ];
@@ -44,7 +44,7 @@ const offsets = [
 ];
 
 const baseCard =
-  "[grid-area:stack] relative flex h-36 w-[20rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 border-gray-200 bg-white/80 px-4 py-3 shadow-md backdrop-blur-sm transition-all duration-500 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-[20rem] after:bg-gradient-to-l after:from-white after:to-transparent after:content-[''] hover:border-orange-300 hover:bg-white hover:z-50 hover:-translate-y-2 [&>*]:flex [&>*]:items-center [&>*]:gap-2";
+  "[grid-area:stack] relative flex h-36 w-[18rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 border-gray-200 bg-white/80 px-4 py-3 shadow-md backdrop-blur-sm transition-all duration-500 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-[18rem] after:bg-gradient-to-l after:from-white after:to-transparent after:content-[''] hover:border-orange-300 hover:bg-white hover:z-50 hover:-translate-y-2 [&>*]:flex [&>*]:items-center [&>*]:gap-2";
 
 const dimmed =
   "grayscale before:absolute before:inset-0 before:rounded-xl before:bg-white/55 before:content-[''] before:transition-opacity before:duration-500 hover:grayscale-0 hover:before:opacity-0";
@@ -52,14 +52,31 @@ const dimmed =
 export default function Services() {
   return (
     <section id="leistungen" className="relative overflow-hidden bg-white py-16">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow="Unsere Leistungen"
-          title="Alles rund um Heizung, Sanitär & Wasser"
-          subtitle="Fahren Sie über die Karten: Jede Leistung kommt einzeln nach vorne."
-        />
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-8">
+        {/* Links: Text */}
+        <Reveal>
+          <span className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-600">
+            Unsere Leistungen
+          </span>
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Alles rund um Heizung, Sanitär &amp; Wasser
+          </h2>
+          <p className="mt-4 max-w-md text-base leading-relaxed text-gray-600">
+            Ein Ansprechpartner für den kompletten Bereich der Haustechnik.
+            Kompetent, sauber und zuverlässig. Fahren Sie über die Karten, um die
+            einzelnen Leistungen zu entdecken.
+          </p>
+          <a
+            href="#kontakt"
+            className="group mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.04]"
+          >
+            Angebot anfordern
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </a>
+        </Reveal>
 
-        <Reveal className="mt-16 flex justify-center">
+        {/* Rechts: animiertes Karten-Deck */}
+        <Reveal direction="left" className="flex justify-center lg:justify-end">
           <div className="grid place-items-center [grid-template-areas:'stack']">
             {services.map((s, i) => {
               const Icon = s.icon;
