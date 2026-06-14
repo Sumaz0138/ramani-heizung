@@ -37,10 +37,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         {/* Überschrift */}
         <Reveal className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-600">
-            Unsere Leistungen
-          </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Alles rund um Heizung, Sanitär &amp; Wasser
           </h2>
           <p className="mt-4 text-base leading-relaxed text-gray-600">

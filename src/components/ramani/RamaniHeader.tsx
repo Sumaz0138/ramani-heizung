@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Flame, Menu, Phone, X } from "lucide-react";
+import { Flame, Menu, Phone, Siren, X } from "lucide-react";
 import { COMPANY, NAV_LINKS } from "./data";
 
 export default function RamaniHeader() {
@@ -57,11 +57,15 @@ export default function RamaniHeader() {
         {/* Desktop-CTA */}
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href={COMPANY.phoneHref}
-            className="flex items-center gap-2 text-sm font-semibold text-gray-900 transition-colors hover:text-orange-600"
+            href={COMPANY.emergencyPhoneHref}
+            className="flex items-center gap-2 rounded-full bg-red-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-600/30 ring-2 ring-red-500/20 transition-transform hover:scale-[1.04]"
           >
-            <Phone className="h-4 w-4 text-orange-500" aria-hidden="true" />
-            {COMPANY.phone}
+            <span className="relative flex h-2 w-2" aria-hidden="true">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+            </span>
+            <Siren className="h-4 w-4" aria-hidden="true" />
+            24/7 Notdienst
           </a>
           <a
             href={to("kontakt")}
@@ -98,9 +102,17 @@ export default function RamaniHeader() {
               </a>
             ))}
             <a
+              href={COMPANY.emergencyPhoneHref}
+              onClick={() => setOpen(false)}
+              className="mt-2 flex items-center justify-center gap-2 rounded-full bg-red-600 px-5 py-3 text-center text-sm font-semibold text-white"
+            >
+              <Siren className="h-4 w-4" aria-hidden="true" />
+              24/7 Notdienst: {COMPANY.emergencyPhone}
+            </a>
+            <a
               href={to("kontakt")}
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-3 text-center text-sm font-semibold text-white"
+              className="mt-1 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-3 text-center text-sm font-semibold text-white"
             >
               Angebot anfordern
             </a>

@@ -109,10 +109,7 @@ export function LandingAccordionItem() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Linke Seite: Text */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gray-600">
-              {COMPANY.tagline}
-            </span>
-            <h1 className="mt-6 text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tighter">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tighter">
               Qualitätsservice{" "}
               <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">
                 aus der Region

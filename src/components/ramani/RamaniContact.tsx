@@ -90,10 +90,7 @@ export default function RamaniContact() {
 
                     {/* Text + Aktionen */}
                     <div className="-mt-16 flex h-full flex-col justify-center p-2 md:-mt-4 md:ml-8 md:w-[340px]">
-                      <span className="self-start rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-600">
-                        Kontakt
-                      </span>
-                      <h3 className="mt-3 text-2xl font-bold text-gray-900 md:text-3xl">
+                      <h3 className="text-2xl font-bold text-gray-900 md:text-3xl">
                         Fragen zu Ihrem Projekt?
                       </h3>
                       <p className="mb-4 mt-2 text-sm text-gray-600">
