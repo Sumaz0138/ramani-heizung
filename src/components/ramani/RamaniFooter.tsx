@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Flame, Phone, Mail, MapPin, Clock, Siren } from "lucide-react";
+import { Wrench, Phone, Mail, MapPin, Clock, Siren } from "lucide-react";
 import { COMPANY } from "./data";
 
 export default function RamaniFooter() {
@@ -18,7 +18,7 @@ export default function RamaniFooter() {
           <div>
             <div className="flex items-center gap-2.5">
               <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-orange-500 to-orange-400">
-                <Flame className="h-5 w-5 text-white" aria-hidden="true" />
+                <Wrench className="h-5 w-5 text-white" aria-hidden="true" />
               </span>
               <span className="text-lg font-bold text-gray-900">
                 Ramani<span className="text-orange-500"> Heizung</span>

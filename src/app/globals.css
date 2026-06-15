@@ -96,6 +96,31 @@ body {
   animation: ramani-bob 5s ease-in-out infinite;
 }
 
+/* Logo-Schraubenschlüssel: leichtes Anziehen/Drehen */
+@keyframes ramani-wrench {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-22deg);
+  }
+  30% {
+    transform: rotate(12deg);
+  }
+  45% {
+    transform: rotate(-6deg);
+  }
+}
+.logo-wrench {
+  transform-origin: 50% 50%;
+  animation: ramani-wrench 3.5s ease-in-out infinite;
+}
+.group\/logo:hover .logo-wrench {
+  animation-duration: 0.9s;
+}
+
 /* ---- Endlos-Laufband (rechts -> links) ---- */
 .marquee {
   overflow: hidden;
@@ -145,7 +170,8 @@ body {
   }
   .ramani-glow,
   .ramani-bob,
-  .marquee__track {
+  .marquee__track,
+  .logo-wrench {
     animation: none !important;
   }
   .flip-inner {
