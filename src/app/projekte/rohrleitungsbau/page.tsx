@@ -11,7 +11,7 @@ export default function Page() {
     <ProjectDetail
       title="Rohrleitungsbau"
       category="Installation"
-      gradient="from-stone-600/70 via-orange-700/45 to-stone-900"
+      gradient="from-stone-600/70 via-gray-800/45 to-stone-900"
       imageUrl="https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=2070&auto=format&fit=crop"
       intro="Sauber geplant und langlebig verlegt: Hier haben wir neue Rohrleitungen fachgerecht installiert."
     />

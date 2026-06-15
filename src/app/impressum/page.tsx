@@ -12,7 +12,7 @@ export default function ImpressumPage() {
       <div className="mx-auto max-w-3xl px-5 pt-28 pb-20 sm:px-8 sm:pt-32">
         <Link
           href="/"
-          className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-gray-600 transition-colors hover:text-orange-600"
+          className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-gray-600 transition-colors hover:text-gray-800"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           Zur Startseite
@@ -20,7 +20,7 @@ export default function ImpressumPage() {
 
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">Impressum</h1>
 
-        <div className="mt-4 rounded-xl border border-dashed border-orange-300 bg-orange-50 p-4 text-sm text-orange-700">
+        <div className="mt-4 rounded-xl border border-dashed border-gray-300 bg-gray-100 p-4 text-sm text-gray-800">
           Vorlage: Bitte alle [Platzhalter] durch die echten Angaben ersetzen und vor
           Veröffentlichung rechtlich prüfen lassen.
         </div>
@@ -86,7 +86,7 @@ export default function ImpressumPage() {
             href="https://ec.europa.eu/consumers/odr/"
             target="_blank"
             rel="noreferrer"
-            className="text-orange-600 underline hover:text-orange-700"
+            className="text-gray-800 underline hover:text-gray-800"
           >
             https://ec.europa.eu/consumers/odr/
           </a>

@@ -44,7 +44,7 @@ export default function ProjectDetail({
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             Zurück zu den Projekten
           </a>
-          <span className="text-sm font-semibold uppercase tracking-wider text-orange-300">
+          <span className="text-sm font-semibold uppercase tracking-wider text-gray-300">
             {category}
           </span>
           <h1 className="mt-2 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -75,14 +75,14 @@ export default function ProjectDetail({
             ].map((b) => (
               <section key={b.h}>
                 <h2 className="flex items-center gap-2 text-xl font-bold text-gray-900">
-                  <CircleCheck className="h-5 w-5 text-orange-500" aria-hidden="true" />
+                  <CircleCheck className="h-5 w-5 text-gray-900" aria-hidden="true" />
                   {b.h}
                 </h2>
                 <p className="mt-3 leading-relaxed text-gray-600">{b.t}</p>
               </section>
             ))}
 
-            <div className="rounded-xl border border-dashed border-orange-300 bg-orange-50 p-5 text-sm text-orange-700">
+            <div className="rounded-xl border border-dashed border-gray-300 bg-gray-100 p-5 text-sm text-gray-800">
               Diese Seite ist ein Grundgerüst. Inhalte und Bilder zu diesem Projekt
               ergänzen wir individuell.
             </div>
@@ -90,7 +90,7 @@ export default function ProjectDetail({
         )}
 
         {/* CTA */}
-        <div className="mt-14 flex flex-col items-start gap-4 rounded-2xl border border-gray-200 bg-orange-50/50 p-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-14 flex flex-col items-start gap-4 rounded-2xl border border-gray-200 bg-gray-100/50 p-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-lg font-semibold text-gray-900">
               Ein ähnliches Projekt geplant?
@@ -102,15 +102,15 @@ export default function ProjectDetail({
           <div className="flex flex-wrap gap-3">
             <a
               href="/#kontakt"
-              className="rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.03]"
+              className="rounded-full bg-gradient-to-r from-gray-900 to-gray-700 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-gray-900/30 transition-transform hover:scale-[1.03]"
             >
               Angebot anfordern
             </a>
             <a
               href={COMPANY.phoneHref}
-              className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-900 transition-colors hover:border-orange-400"
+              className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-900 transition-colors hover:border-gray-700"
             >
-              <Phone className="h-4 w-4 text-orange-500" aria-hidden="true" />
+              <Phone className="h-4 w-4 text-gray-900" aria-hidden="true" />
               {COMPANY.phone}
             </a>
           </div>

@@ -29,7 +29,7 @@ export default function RamaniContact() {
   }, [animate]);
 
   const tagClass =
-    "absolute rounded-3xl border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-medium text-orange-700 opacity-40";
+    "absolute rounded-3xl border border-gray-300 bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-800 opacity-40";
 
   return (
     <section id="kontakt" className="relative bg-white py-12">
@@ -41,13 +41,13 @@ export default function RamaniContact() {
                 <Particles
                   className="absolute inset-0 -z-10 opacity-10 transition-opacity duration-1000 ease-in-out group-hover/item:opacity-100"
                   quantity={160}
-                  color="#f97316"
+                  color="#6b7280"
                   vy={-0.2}
                 />
                 <div className="flex flex-col items-center gap-6 p-6 md:flex-row md:gap-4 md:p-8">
                   {/* Animierter Zeiger + Service-Tags */}
                   <div className="relative h-[240px] w-[280px] shrink-0" ref={scope}>
-                    <span className="absolute left-1/2 top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-2xl bg-gradient-to-br from-orange-500 to-orange-400 shadow-lg shadow-orange-500/30">
+                    <span className="absolute left-1/2 top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-2xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-lg shadow-gray-900/30">
                       <Flame className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                     <div id="heizung" className={`${tagClass} right-6 top-8`}>
@@ -64,7 +64,7 @@ export default function RamaniContact() {
                         width="16.8"
                         height="18.2"
                         viewBox="0 0 12 13"
-                        className="fill-orange-500"
+                        className="fill-gray-900"
                         stroke="white"
                         strokeWidth="1"
                         xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ export default function RamaniContact() {
                           d="M12 5.50676L0 0L2.83818 13L6.30623 7.86537L12 5.50676V5.50676Z"
                         />
                       </svg>
-                      <span className="relative -top-1 left-3 rounded-3xl bg-orange-500 px-2 py-1 text-xs text-white">
+                      <span className="relative -top-1 left-3 rounded-3xl bg-gray-900 px-2 py-1 text-xs text-white">
                         Ramani
                       </span>
                     </div>
@@ -96,14 +96,14 @@ export default function RamaniContact() {
                         <a
                           href={COMPANY.phoneHref}
                           aria-label="Anrufen"
-                          className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-orange-400 hover:text-orange-600"
+                          className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-gray-700 hover:text-gray-800"
                         >
                           <Phone className="h-5 w-5" aria-hidden="true" />
                         </a>
                         <a
                           href={COMPANY.emailHref}
                           aria-label="E-Mail schreiben"
-                          className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-orange-400 hover:text-orange-600"
+                          className="grid h-12 w-12 place-items-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:border-gray-700 hover:text-gray-800"
                         >
                           <Mail className="h-5 w-5" aria-hidden="true" />
                         </a>

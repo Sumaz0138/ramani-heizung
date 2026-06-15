@@ -68,7 +68,7 @@ const AccordionItem = ({ item, isActive, onMouseEnter }: AccordionItemProps) => 
         onError={(e) => {
           const target = e.currentTarget;
           target.onerror = null;
-          target.src = `https://placehold.co/400x450/ea580c/ffffff?text=${encodeURIComponent(
+          target.src = `https://placehold.co/400x450/1f2937/ffffff?text=${encodeURIComponent(
             item.title
           )}`;
         }}
@@ -109,7 +109,7 @@ export function LandingAccordionItem() {
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tighter">
               Qualitätsservice{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                 aus der Region
               </span>
             </h1>

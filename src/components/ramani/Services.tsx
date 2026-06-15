@@ -26,7 +26,7 @@ const offsets = [
 ];
 
 const baseCard =
-  "[grid-area:stack] relative flex h-40 w-[21rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 border-gray-200 bg-white px-5 py-4 shadow-md transition-all duration-500 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-24 after:bg-gradient-to-l after:from-white after:to-transparent after:opacity-100 after:transition-opacity after:content-[''] hover:z-50 hover:-translate-y-3 hover:border-orange-300 hover:after:opacity-0 [&>*]:flex [&>*]:items-center [&>*]:gap-2";
+  "[grid-area:stack] relative flex h-40 w-[21rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 border-gray-200 bg-white px-5 py-4 shadow-md transition-all duration-500 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-24 after:bg-gradient-to-l after:from-white after:to-transparent after:opacity-100 after:transition-opacity after:content-[''] hover:z-50 hover:-translate-y-3 hover:border-gray-300 hover:after:opacity-0 [&>*]:flex [&>*]:items-center [&>*]:gap-2";
 
 const dimmed =
   "grayscale before:absolute before:inset-0 before:rounded-xl before:bg-white/55 before:content-[''] before:transition-opacity before:duration-500 hover:grayscale-0 hover:before:opacity-0";
@@ -51,10 +51,10 @@ export default function Services() {
           <Reveal>
             <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-gray-200 shadow-xl lg:mx-0 lg:-ml-2">
               {/* Fallback, falls kein Foto hinterlegt ist */}
-              <div className="absolute inset-0 grid place-items-center bg-orange-50 text-center">
+              <div className="absolute inset-0 grid place-items-center bg-gray-100 text-center">
                 <div>
-                  <Camera className="mx-auto h-10 w-10 text-orange-300" aria-hidden="true" />
-                  <p className="mt-3 text-sm font-medium text-orange-500">Gründer-Foto</p>
+                  <Camera className="mx-auto h-10 w-10 text-gray-300" aria-hidden="true" />
+                  <p className="mt-3 text-sm font-medium text-gray-900">Gründer-Foto</p>
                   <p className="mt-1 text-xs text-gray-400">
                     Bild unter <span className="font-mono">public/gruender.jpg</span> ablegen
                   </p>
@@ -86,13 +86,13 @@ export default function Services() {
                     className={cn(baseCard, offsets[i], !isFront && dimmed)}
                   >
                     <div>
-                      <span className="relative inline-flex rounded-full bg-gradient-to-br from-orange-500 to-orange-400 p-1.5">
+                      <span className="relative inline-flex rounded-full bg-gradient-to-br from-gray-900 to-gray-700 p-1.5">
                         <Icon className="size-4 text-white" aria-hidden="true" />
                       </span>
                       <p className="text-lg font-semibold text-gray-900">{s.title}</p>
                     </div>
                     <p className="whitespace-nowrap text-sm text-gray-600">{s.desc}</p>
-                    <p className="text-xs font-medium uppercase tracking-wider text-orange-500">
+                    <p className="text-xs font-medium uppercase tracking-wider text-gray-900">
                       {s.tag}
                     </p>
                   </div>

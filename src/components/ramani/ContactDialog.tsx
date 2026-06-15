@@ -26,7 +26,7 @@ export default function ContactDialog() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.03]"
+        className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gray-900 to-gray-700 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-gray-900/30 transition-transform hover:scale-[1.03]"
       >
         Kontaktanfrage senden
         <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />

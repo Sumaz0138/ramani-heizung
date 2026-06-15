@@ -34,11 +34,11 @@ export default function RamaniHeader() {
           href={isHome ? "#top" : "/"}
           className="group/logo absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-2.5"
         >
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-orange-500 to-orange-400 shadow-lg shadow-orange-500/30 transition-transform duration-300 group-hover/logo:scale-110">
+          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-lg shadow-gray-900/30 transition-transform duration-300 group-hover/logo:scale-110">
             <Wrench className="logo-wrench h-5 w-5 text-white" aria-hidden="true" />
           </span>
           <span className="text-lg font-bold tracking-tight text-gray-900">
-            Ramani<span className="text-orange-500"> Heizung</span>
+            Ramani<span className="text-gray-900"> Heizung</span>
           </span>
         </a>
 
@@ -57,7 +57,7 @@ export default function RamaniHeader() {
           </a>
           <a
             href={to("kontakt")}
-            className="rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.04]"
+            className="rounded-full bg-gradient-to-r from-gray-900 to-gray-700 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-gray-900/30 transition-transform hover:scale-[1.04]"
           >
             Angebot anfordern
           </a>
@@ -90,7 +90,7 @@ export default function RamaniHeader() {
             <a
               href={to("kontakt")}
               onClick={() => setOpen(false)}
-              className="rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-3 text-center text-sm font-semibold text-white"
+              className="rounded-full bg-gradient-to-r from-gray-900 to-gray-700 px-5 py-3 text-center text-sm font-semibold text-white"
             >
               Angebot anfordern
             </a>
@@ -98,7 +98,7 @@ export default function RamaniHeader() {
               href={COMPANY.phoneHref}
               className="flex items-center justify-center gap-2 rounded-full border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-900"
             >
-              <Phone className="h-4 w-4 text-orange-500" aria-hidden="true" />
+              <Phone className="h-4 w-4 text-gray-900" aria-hidden="true" />
               {COMPANY.phone}
             </a>
           </nav>

@@ -19,7 +19,7 @@ body {
   width: 32px;
   height: 32px;
   border: 3px solid rgba(0, 0, 0, 0.12);
-  border-top-color: #f97316;
+  border-top-color: #1f2937;
   border-radius: 50%;
   display: inline-block;
   animation: loader-spin 0.8s linear infinite;
@@ -35,9 +35,9 @@ body {
    Ramani-Heizung – Theme: Weiß / Orange
    ============================================================ */
 .ramani {
-  --r-orange: #f97316;
-  --r-orange-dark: #ea580c;
-  --r-orange-soft: #fb923c;
+  --r-orange: #1f2937;
+  --r-orange-dark: #111827;
+  --r-orange-soft: #4b5563;
   --r-ink: #111827;
   --r-muted: #4b5563;
 
@@ -60,8 +60,8 @@ body {
 /* Dezentes technisches Raster (hell) */
 .ramani-grid {
   background-image:
-    linear-gradient(to right, rgba(249, 115, 22, 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(249, 115, 22, 0.07) 1px, transparent 1px);
+    linear-gradient(to right, rgba(17, 24, 39, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
   background-size: 56px 56px;
 }
 

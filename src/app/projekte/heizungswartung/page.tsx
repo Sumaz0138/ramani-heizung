@@ -11,7 +11,7 @@ export default function Page() {
     <ProjectDetail
       title="Heizungswartung"
       category="Service"
-      gradient="from-orange-400/75 via-stone-700/55 to-stone-900"
+      gradient="from-gray-700/75 via-stone-700/55 to-stone-900"
       imageUrl="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=1974&auto=format&fit=crop"
       intro="Damit die Anlage zuverlässig läuft: regelmäßige Wartung für volle Leistung, niedrige Kosten und eine lange Lebensdauer."
     />

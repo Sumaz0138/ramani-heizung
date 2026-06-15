@@ -19,7 +19,7 @@ const services = [
 ];
 
 const inputClass =
-  "w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 transition-colors focus:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200";
+  "w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 transition-colors focus:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300";
 
 export default function RamaniContactForm() {
   const [state, formAction, pending] = useActionState(sendRamaniContact, initialState);
@@ -54,7 +54,7 @@ export default function RamaniContactForm() {
       <button
         type="submit"
         disabled={pending}
-        className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-[1.03] disabled:cursor-not-allowed disabled:opacity-60"
+        className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gray-900 to-gray-700 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-gray-900/30 transition-transform hover:scale-[1.03] disabled:cursor-not-allowed disabled:opacity-60"
       >
         {pending ? "Wird gesendet …" : "Anfrage senden"}
         {!pending && (
@@ -65,7 +65,7 @@ export default function RamaniContactForm() {
       {state.status !== "idle" && state.message && (
         <p
           role="status"
-          className={`text-sm ${state.status === "success" ? "text-orange-600" : "text-red-600"}`}
+          className={`text-sm ${state.status === "success" ? "text-gray-800" : "text-red-600"}`}
         >
           {state.message}
         </p>
