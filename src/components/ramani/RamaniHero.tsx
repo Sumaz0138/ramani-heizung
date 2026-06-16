@@ -2,7 +2,7 @@
 
 import { motion, type Variants } from "motion/react";
 import { Flame, Phone, ArrowRight, ShieldCheck, Clock, Star } from "lucide-react";
-import { SplineScene } from "@/components/ui/splite";
+import Image from "next/image";
 import AnimatedBackground from "./AnimatedBackground";
 import { COMPANY } from "./data";
 
@@ -92,10 +92,13 @@ export default function RamaniHero() {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="relative"
         >
-          <div className="relative h-[360px] overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-2xl shadow-sky-900/40 sm:h-[460px] lg:h-[520px]">
-            <SplineScene
-              scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-              className="h-full w-full"
+          <div className="relative h-[360px] overflow-hidden rounded-3xl border border-white/10 shadow-2xl shadow-sky-900/40 sm:h-[460px] lg:h-[520px]">
+            <Image
+              src="/hero.jpg.jpg"
+              alt="Ramani Heizung & Sanitär – professionelle Handwerker bei der Arbeit"
+              fill
+              className="object-cover"
+              priority
             />
             {/* Schwebendes Info-Badge */}
             <div className="ramani-bob absolute left-5 top-5 rounded-2xl border border-white/10 bg-[#081427]/80 px-4 py-2.5 backdrop-blur-md">
@@ -106,8 +109,8 @@ export default function RamaniHero() {
               className="ramani-bob absolute bottom-5 right-5 rounded-2xl border border-white/10 bg-[#081427]/80 px-4 py-2.5 backdrop-blur-md"
               style={{ animationDelay: "1.5s" }}
             >
-              <p className="text-[11px] uppercase tracking-wider text-slate-400">Interaktiv</p>
-              <p className="text-sm font-semibold text-white">3D erkunden →</p>
+              <p className="text-[11px] uppercase tracking-wider text-slate-400">Meisterbetrieb</p>
+              <p className="text-sm font-semibold text-white">seit 2010 ✓</p>
             </div>
           </div>
         </motion.div>
