@@ -1,0 +1,14 @@
+Samsung-Klimaanlage für die Lampen-Hero-Sektion
+================================================
+
+Lege dein Produktbild in diesem Ordner ab und benenne es exakt:
+
+    klimaanlage.jpg
+
+Empfehlung:
+- Querformat, am besten freigestellt oder vor dunklem/neutralem Hintergrund
+  (die Hero-Sektion ist dunkel/anthrazit – ein helles, freigestelltes
+  Gerät wirkt darauf wie vom Lichtkegel beleuchtet).
+
+Solange keine Datei vorhanden ist, zeigt die Sektion einen dezenten
+Platzhalter ("Bild der Samsung-Klimaanlage ... ablegen").

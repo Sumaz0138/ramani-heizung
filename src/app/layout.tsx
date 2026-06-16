@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import RamaniHeader from "@/components/ramani/RamaniHeader";
 import RamaniFooter from "@/components/ramani/RamaniFooter";
 
 const geistSans = Geist({
@@ -31,7 +30,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body className="ramani min-h-screen">
-        <RamaniHeader />
         {children}
         <RamaniFooter />
       </body>

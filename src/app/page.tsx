@@ -1,11 +1,11 @@
-import { LandingAccordionItem } from "@/components/ui/interactive-image-accordion";
+import AcLampHero from "@/components/ramani/AcLampHero";
 import Services from "@/components/ramani/Services";
 import RamaniContact from "@/components/ramani/RamaniContact";
 
 export default function Home() {
   return (
     <>
-      <LandingAccordionItem />
+      <AcLampHero />
       <Services />
       <RamaniContact />
     </>
