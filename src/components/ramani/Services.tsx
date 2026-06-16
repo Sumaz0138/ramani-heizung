@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Flame, Fuel, Bath, Siren } from "lucide-react";
+import { Flame, Fuel, Bath, ThumbsUp } from "lucide-react";
 import Reveal from "./Reveal";
 
 type Service = {
@@ -13,7 +13,7 @@ const services: Service[] = [
   { icon: Flame, title: "Heizung", desc: "Installation & Wartung von der Wärmepumpe bis zur Gasbrennwerttherme.", tag: "Wärmepumpe · Gas" },
   { icon: Bath, title: "Bad & Sanitär", desc: "Komplette Badsanierung, Wasserinstallation, Armaturen und Anschlüsse.", tag: "Bäder · Wasser" },
   { icon: Fuel, title: "Gas-Service", desc: "Sichere Installation, Prüfung und Wartung Ihrer Gasanlagen nach Norm.", tag: "Sicher & geprüft" },
-  { icon: Siren, title: "Notdienst", desc: "Reparatur, Leckortung und Soforthilfe bei Heizungs- oder Wasserschäden.", tag: "24/7 erreichbar" },
+  { icon: ThumbsUp, title: "Kundenzufriedenheit", desc: "Ehrliche Beratung, saubere Arbeit und faire Preise. Dafür schätzen uns unsere Kunden.", tag: "Top bewertet" },
 ];
 
 export default function Services() {
