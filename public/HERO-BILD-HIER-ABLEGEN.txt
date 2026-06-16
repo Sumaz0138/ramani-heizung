@@ -1,0 +1,15 @@
+Großes Hero-Bild (Startseite, ganz oben)
+========================================
+
+Lege dein Bild in diesem Ordner ab und benenne es exakt:
+
+    hero.jpg
+
+Empfehlung:
+- Querformat, hohe Auflösung (mind. ~2000 px breit), z. B. ein Foto von
+  eurer Arbeit (Bad, Heizungsanlage, Monteur) – wirkt bildschirmfüllend.
+- Über dem Bild liegt ein dunkler Verlauf, damit die weiße Schrift
+  ("Willkommen bei Ramani") gut lesbar bleibt.
+
+Solange keine Datei vorhanden ist, zeigt die Sektion einen neutralen
+grauen Platzhalter mit Hinweis.

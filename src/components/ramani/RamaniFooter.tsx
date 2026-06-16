@@ -21,7 +21,7 @@ export default function RamaniFooter() {
                 <Wrench className="h-5 w-5 text-white" aria-hidden="true" />
               </span>
               <span className="text-lg font-bold text-gray-900">
-                Ramani<span className="text-gray-900"> Heizung</span>
+                Ramani
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-600">

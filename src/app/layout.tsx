@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import RamaniHeader from "@/components/ramani/RamaniHeader";
 import RamaniFooter from "@/components/ramani/RamaniFooter";
 
 const geistSans = Geist({
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ramani Heizung | Meisterbetrieb für Heizung, Sanitär, Gas & Wasser",
+  title: "Ramani | Meisterbetrieb für Heizung, Sanitär, Gas & Wasser",
   description:
     "Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser. Heizungsinstallation, Wartung, Badsanierung, Leckortung und 24/7 Notdienst. Schnell, sauber und zuverlässig.",
 };
@@ -30,6 +31,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body className="ramani min-h-screen">
+        <RamaniHeader />
         {children}
         <RamaniFooter />
       </body>

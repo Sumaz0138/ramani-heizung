@@ -5,8 +5,8 @@
  */
 
 export const COMPANY = {
-  name: "Ramani Heizung",
-  legalName: "Ramani Heizung & Sanitär GmbH",
+  name: "Ramani",
+  legalName: "Ramani GmbH",
   tagline: "Heizung · Sanitär · Gas · Wasser",
   phone: "+49 (0) 000 000 000", // Platzhalter
   phoneHref: "tel:+490000000000", // Platzhalter
