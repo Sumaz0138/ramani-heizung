@@ -14,7 +14,7 @@ export default function FullImageHero() {
       {/* Hero-Bild */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero.jpg')" }}
+        style={{ backgroundImage: "url('/hero.jpg.jpg')" }}
       />
 
       {/* Verlauf für Lesbarkeit */}
@@ -23,10 +23,7 @@ export default function FullImageHero() {
       {/* Inhalt */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pt-20 sm:px-8">
         <div className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-sm">
-            Heizung · Sanitär · Gas · Wasser
-          </span>
-          <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl">
+          <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl">
             Willkommen bei Ramani
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/90">
