@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useAnimate } from "framer-motion";
-import { Flame, Mail, Phone } from "lucide-react";
+import { Wrench, Mail, Phone } from "lucide-react";
 import { HighlightGroup, HighlighterItem, Particles } from "@/components/ui/highlighter";
 import ContactDialog from "./ContactDialog";
 import { COMPANY } from "./data";
@@ -29,7 +29,7 @@ export default function RamaniContact() {
   }, [animate]);
 
   const tagClass =
-    "absolute rounded-3xl border border-gray-300 bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-800 opacity-40";
+    "absolute rounded-3xl border border-gray-300 bg-white px-3 py-1.5 text-xs font-medium text-gray-800 opacity-40";
 
   return (
     <section id="kontakt" className="relative bg-white py-12">
@@ -37,7 +37,7 @@ export default function RamaniContact() {
         <HighlightGroup className="group h-full">
           <div className="group/item h-full">
             <HighlighterItem className="rounded-3xl p-4">
-              <div className="relative z-20 h-full overflow-hidden rounded-3xl border border-gray-200 bg-white">
+              <div className="relative z-20 h-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100">
                 <Particles
                   className="absolute inset-0 -z-10 opacity-10 transition-opacity duration-1000 ease-in-out group-hover/item:opacity-100"
                   quantity={160}
@@ -48,7 +48,7 @@ export default function RamaniContact() {
                   {/* Animierter Zeiger + Service-Tags */}
                   <div className="relative h-[240px] w-[280px] shrink-0" ref={scope}>
                     <span className="absolute left-1/2 top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-2xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-lg shadow-gray-900/30">
-                      <Flame className="h-6 w-6 text-white" aria-hidden="true" />
+                      <Wrench className="logo-wrench h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                     <div id="heizung" className={`${tagClass} right-6 top-8`}>
                       Heizung
