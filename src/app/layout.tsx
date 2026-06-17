@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import RamaniHeader from "@/components/ramani/RamaniHeader";
 import RamaniFooter from "@/components/ramani/RamaniFooter";
+import CookieBanner from "@/components/ramani/CookieBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <RamaniHeader />
         {children}
         <RamaniFooter />
+        <CookieBanner />
       </body>
     </html>
   );
