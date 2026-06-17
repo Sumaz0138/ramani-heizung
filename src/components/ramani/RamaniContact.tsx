@@ -76,7 +76,7 @@ export default function RamaniContact() {
                         />
                       </svg>
                       <span className="relative -top-1 left-3 rounded-3xl bg-gray-900 px-2 py-1 text-xs text-white">
-                        Ramani
+                        Du
                       </span>
                     </div>
                   </div>
