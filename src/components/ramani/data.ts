@@ -12,8 +12,8 @@ export const COMPANY = {
   phoneHref: "tel:+490000000000", // Platzhalter
   emergencyPhone: "+49 (0) 000 111 222", // Platzhalter Notdienst
   emergencyPhoneHref: "tel:+490000111222", // Platzhalter
-  email: "info@ramani-heizung.de", // Platzhalter
-  emailHref: "mailto:info@ramani-heizung.de",
+  email: "info@ramani.de",
+  emailHref: "mailto:info@ramani.de",
   serviceArea: "Rhein-Neckar-Region & Umkreis 50 km", // Platzhalter
   address: "Musterstraße 1, 00000 Musterstadt", // Platzhalter
   hours: [
