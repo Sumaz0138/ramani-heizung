@@ -28,7 +28,7 @@ export default function FullImageHero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/90">
             Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser. Von der
-            Beratung über die Installation bis zum 24/7 Notdienst, alles aus einer
+            Beratung über die Installation bis zur Wartung, alles aus einer
             Hand, sauber und zuverlässig.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -40,11 +40,11 @@ export default function FullImageHero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </a>
             <a
-              href={COMPANY.emergencyPhoneHref}
+              href={COMPANY.phoneHref}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/15"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              24/7 Notdienst
+              Jetzt anrufen
             </a>
           </div>
         </div>

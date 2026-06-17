@@ -19,7 +19,6 @@ export const COMPANY = {
   hours: [
     { day: "Mo bis Fr", time: "07:00 bis 18:00 Uhr" },
     { day: "Samstag", time: "08:00 bis 14:00 Uhr" },
-    { day: "Notdienst", time: "24 / 7 erreichbar" },
   ],
 } as const;
 

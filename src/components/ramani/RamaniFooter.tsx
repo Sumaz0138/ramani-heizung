@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Wrench, Phone, Mail, MapPin, Clock, Siren } from "lucide-react";
+import { Wrench, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { COMPANY } from "./data";
 
 export default function RamaniFooter() {
@@ -29,11 +29,11 @@ export default function RamaniFooter() {
               Traditionelles Handwerk verbunden mit moderner Technik.
             </p>
             <a
-              href={COMPANY.emergencyPhoneHref}
+              href={COMPANY.phoneHref}
               className="mt-5 inline-flex items-center gap-2 rounded-full border border-gray-300 bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 transition-colors hover:bg-gray-300"
             >
-              <Siren className="h-4 w-4" aria-hidden="true" />
-              Notdienst: {COMPANY.emergencyPhone}
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Anrufen: {COMPANY.phone}
             </a>
           </div>
 

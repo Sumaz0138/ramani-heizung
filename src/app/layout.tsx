@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ramani | Meisterbetrieb für Heizung, Sanitär, Gas & Wasser",
   description:
-    "Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser. Heizungsinstallation, Wartung, Badsanierung, Leckortung und 24/7 Notdienst. Schnell, sauber und zuverlässig.",
+    "Ihr Meisterbetrieb für Heizung, Sanitär, Gas und Wasser. Heizungsinstallation, Wartung, Badsanierung und Leckortung. Schnell, sauber und zuverlässig.",
 };
 
 export default function RootLayout({
