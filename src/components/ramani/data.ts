@@ -6,16 +6,21 @@
 
 export const COMPANY = {
   name: "Ramani",
-  legalName: "Ramani GmbH",
+  legalName: "Ramani Gebäudetechnik",
+  owner: "Muris Ramani",
   tagline: "Heizung · Sanitär · Gas · Wasser",
-  phone: "+49 (0) 000 000 000", // Platzhalter
-  phoneHref: "tel:+490000000000", // Platzhalter
-  emergencyPhone: "+49 (0) 000 111 222", // Platzhalter Notdienst
-  emergencyPhoneHref: "tel:+490000111222", // Platzhalter
+  phone: "+49 175 3678069",
+  phoneHref: "tel:+491753678069",
+  emergencyPhone: "+49 175 3678069",
+  emergencyPhoneHref: "tel:+491753678069",
   email: "info@ramani.de",
   emailHref: "mailto:info@ramani.de",
-  serviceArea: "Rhein-Neckar-Region & Umkreis 50 km", // Platzhalter
-  address: "Musterstraße 1, 00000 Musterstadt", // Platzhalter
+  street: "Schläuchenweg 6/6",
+  city: "69214 Eppelheim",
+  serviceArea: "Rhein-Neckar-Region & Umkreis 50 km",
+  address: "Schläuchenweg 6/6, 69214 Eppelheim",
+  profession: "Installateur und Heizungsbauer",
+  chamber: "Handwerkskammer Mannheim Rhein-Neckar-Odenwald, B1, 1-2, 68159 Mannheim",
   hours: [
     { day: "Mo bis Fr", time: "07:00 bis 18:00 Uhr" },
     { day: "Samstag", time: "08:00 bis 14:00 Uhr" },

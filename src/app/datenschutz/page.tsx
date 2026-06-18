@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung | Ramani Heizung",
+  title: "Datenschutzerklärung | Ramani Gebäudetechnik",
 };
 
 export default function DatenschutzPage() {
@@ -22,22 +22,20 @@ export default function DatenschutzPage() {
           Datenschutzerklärung
         </h1>
 
-        <div className="mt-4 rounded-xl border border-dashed border-gray-300 bg-gray-100 p-4 text-sm text-gray-800">
-          Vorlage: Bitte [Platzhalter] ausfüllen und vor Veröffentlichung rechtlich prüfen
-          lassen (z. B. Rechtsanwalt oder Datenschutzbeauftragten).
-        </div>
-
         <h2 className="mt-10 text-lg font-semibold text-gray-900">1. Verantwortlicher</h2>
         <p className="mt-3 leading-relaxed text-gray-600">
           Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
           <br />
-          [Firmenname]
+          Ramani Gebäudetechnik
           <br />
-          [Vorname Nachname]
+          Muris Ramani
           <br />
-          [Straße Hausnummer, PLZ Ort]
+          Schläuchenweg 6/6, 69214 Eppelheim
           <br />
-          E-Mail: [info@ramani-heizung.de]
+          E-Mail:{" "}
+          <a href="mailto:info@ramani.de" className="text-gray-800 underline hover:text-gray-900">
+            info@ramani.de
+          </a>
         </p>
 
         <h2 className="mt-8 text-lg font-semibold text-gray-900">
@@ -67,7 +65,18 @@ export default function DatenschutzPage() {
           geeignete Garantien gemäß Art. 44 ff. DSGVO.
         </p>
 
-        <h2 className="mt-8 text-lg font-semibold text-gray-900">4. Hosting</h2>
+        <h2 className="mt-8 text-lg font-semibold text-gray-900">4. Google Analytics</h2>
+        <p className="mt-3 leading-relaxed text-gray-600">
+          Diese Website nutzt Google Analytics 4, einen Webanalysedienst der Google Ireland
+          Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics wird nur
+          nach Ihrer ausdrücklichen Einwilligung über den Cookie-Banner aktiviert. Die
+          IP-Anonymisierung ist aktiviert, sodass Ihre IP-Adresse vor der Übermittlung
+          gekürzt wird. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO. Sie können Ihre
+          Einwilligung jederzeit widerrufen, indem Sie den Browser-Cache und die Cookies
+          löschen.
+        </p>
+
+        <h2 className="mt-8 text-lg font-semibold text-gray-900">5. Hosting</h2>
         <p className="mt-3 leading-relaxed text-gray-600">
           Diese Website wird bei <span className="font-medium text-gray-800">Vercel</span>{" "}
           (Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA) gehostet. Beim Aufruf
@@ -75,7 +84,7 @@ export default function DatenschutzPage() {
           Hosters verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
         </p>
 
-        <h2 className="mt-8 text-lg font-semibold text-gray-900">5. Ihre Rechte</h2>
+        <h2 className="mt-8 text-lg font-semibold text-gray-900">6. Ihre Rechte</h2>
         <p className="mt-3 leading-relaxed text-gray-600">
           Sie haben jederzeit das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16),
           Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit
@@ -83,17 +92,16 @@ export default function DatenschutzPage() {
           einer Datenschutzaufsichtsbehörde beschweren (Art. 77 DSGVO). Wenden Sie sich dazu
           an:{" "}
           <a
-            href="mailto:info@ramani-heizung.de"
-            className="text-gray-800 underline hover:text-gray-800"
+            href="mailto:info@ramani.de"
+            className="text-gray-800 underline hover:text-gray-900"
           >
-            [info@ramani-heizung.de]
+            info@ramani.de
           </a>
           .
         </p>
 
         <p className="mt-10 text-sm text-gray-400">
-          Stand: [Datum]. Diese Datenschutzerklärung ist als Vorlage zu verstehen und sollte
-          vor Veröffentlichung rechtlich geprüft werden.
+          Stand: Juni 2026
         </p>
       </div>
     </div>

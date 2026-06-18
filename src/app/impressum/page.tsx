@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Impressum | Ramani Heizung",
+  title: "Impressum | Ramani Gebäudetechnik",
 };
 
 export default function ImpressumPage() {
@@ -20,62 +20,50 @@ export default function ImpressumPage() {
 
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">Impressum</h1>
 
-        <div className="mt-4 rounded-xl border border-dashed border-gray-300 bg-gray-100 p-4 text-sm text-gray-800">
-          Vorlage: Bitte alle [Platzhalter] durch die echten Angaben ersetzen und vor
-          Veröffentlichung rechtlich prüfen lassen.
-        </div>
-
         <h2 className="mt-10 text-lg font-semibold text-gray-900">Angaben gemäß § 5 TMG</h2>
         <p className="mt-3 leading-relaxed text-gray-600">
-          [Firmenname, z. B. Ramani Heizung &amp; Sanitär GmbH]
+          Ramani Gebäudetechnik
           <br />
-          [Vorname Nachname, vertretungsberechtigte Person]
+          Muris Ramani
           <br />
-          [Straße Hausnummer]
+          Schläuchenweg 6/6
           <br />
-          [PLZ Ort]
+          69214 Eppelheim
         </p>
 
         <h2 className="mt-8 text-lg font-semibold text-gray-900">Kontakt</h2>
         <p className="mt-3 leading-relaxed text-gray-600">
-          Telefon: [Telefonnummer]
+          Telefon: +49 175 3678069
           <br />
-          E-Mail: [info@ramani-heizung.de]
-        </p>
-
-        <h2 className="mt-8 text-lg font-semibold text-gray-900">
-          Handelsregister / Rechtsform
-        </h2>
-        <p className="mt-3 leading-relaxed text-gray-600">
-          Registergericht: [Amtsgericht …]
-          <br />
-          Registernummer: [HRB …]
-          <br />
-          Geschäftsführer / Inhaber: [Vorname Nachname]
-        </p>
-
-        <h2 className="mt-8 text-lg font-semibold text-gray-900">Umsatzsteuer-ID</h2>
-        <p className="mt-3 leading-relaxed text-gray-600">
-          Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [DE…]
+          E-Mail:{" "}
+          <a href="mailto:info@ramani.de" className="text-gray-800 underline hover:text-gray-900">
+            info@ramani.de
+          </a>
         </p>
 
         <h2 className="mt-8 text-lg font-semibold text-gray-900">
           Berufsrechtliche Angaben (Handwerk)
         </h2>
         <p className="mt-3 leading-relaxed text-gray-600">
-          Zuständige Handwerkskammer: [HWK …]
+          Gesetzliche Berufsbezeichnung: Installateur und Heizungsbauer (verliehen in Deutschland)
           <br />
-          Gesetzliche Berufsbezeichnung: [z. B. Installateur- und Heizungsbauermeister,
-          verliehen in Deutschland]
+          <br />
+          Zuständige Kammer:
+          <br />
+          Handwerkskammer Mannheim Rhein-Neckar-Odenwald
+          <br />
+          B1, 1-2
+          <br />
+          68159 Mannheim
         </p>
 
         <h2 className="mt-8 text-lg font-semibold text-gray-900">
           Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
         </h2>
         <p className="mt-3 leading-relaxed text-gray-600">
-          [Vorname Nachname]
+          Muris Ramani
           <br />
-          [Straße Hausnummer, PLZ Ort]
+          Schläuchenweg 6/6, 69214 Eppelheim
         </p>
 
         <h2 className="mt-8 text-lg font-semibold text-gray-900">EU-Streitschlichtung</h2>
@@ -86,13 +74,12 @@ export default function ImpressumPage() {
             href="https://ec.europa.eu/consumers/odr/"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-800 underline hover:text-gray-800"
+            className="text-gray-800 underline hover:text-gray-900"
           >
             https://ec.europa.eu/consumers/odr/
           </a>
-          . Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder
-          verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
-          teilzunehmen.
+          . Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+          Verbraucherschlichtungsstelle teilzunehmen.
         </p>
       </div>
     </div>
