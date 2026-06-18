@@ -45,7 +45,7 @@ export default function UeberUnsPage() {
           className="max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tight text-gray-900 sm:text-6xl lg:text-7xl"
         >
           Über{" "}
-          <span className="bg-gradient-to-r from-sky-500 to-orange-400 bg-clip-text text-transparent">
+          <span className="text-gray-400">
             Ramani
           </span>
         </motion.h1>
@@ -71,7 +71,7 @@ export default function UeberUnsPage() {
       {/* ── STORY ──────────────────────────────────────────────── */}
       <section className="mx-auto max-w-3xl px-5 py-24 sm:px-8">
         <div className="space-y-6">
-          <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-orange-500">
+          <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-gray-400">
             Unsere Geschichte
           </motion.p>
           <motion.h2 {...fade(0.06)} className="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl">
@@ -96,7 +96,7 @@ export default function UeberUnsPage() {
       {/* ── WERTE ──────────────────────────────────────────────── */}
       <section className="border-t border-gray-200 bg-gray-50 py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-orange-500 text-center mb-3">
+          <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-gray-400 text-center mb-3">
             Was uns ausmacht
           </motion.p>
           <motion.h2 {...fade(0.06)} className="text-center text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl mb-14">
@@ -110,8 +110,8 @@ export default function UeberUnsPage() {
                 {...fade(i * 0.07)}
                 className="group rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-md hover:border-gray-300"
               >
-                <div className="mb-5 grid h-12 w-12 place-items-center rounded-2xl border border-orange-100 bg-orange-50">
-                  <Icon className="h-5 w-5 text-orange-500" />
+                <div className="mb-5 grid h-12 w-12 place-items-center rounded-2xl border border-gray-200 bg-gray-100">
+                  <Icon className="h-5 w-5 text-gray-400" />
                 </div>
                 <h3 className="mb-2 text-base font-bold text-gray-900">{title}</h3>
                 <p className="text-sm leading-relaxed text-gray-500">{text}</p>
@@ -125,7 +125,7 @@ export default function UeberUnsPage() {
       <section className="border-t border-gray-200 py-24">
         <div className="mx-auto max-w-5xl px-5 sm:px-8">
           <div className="rounded-3xl border border-gray-200 bg-gray-50 p-10 sm:p-16 text-center">
-            <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-orange-500 mb-4">
+            <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">
               Bereit loszulegen?
             </motion.p>
             <motion.h2 {...fade(0.06)} className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl mb-4">
@@ -148,14 +148,14 @@ export default function UeberUnsPage() {
                 href={COMPANY.emailHref}
                 className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-7 py-3.5 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50"
               >
-                <Mail className="h-4 w-4 text-sky-500" />
+                <Mail className="h-4 w-4 text-gray-500" />
                 {COMPANY.email}
               </a>
               <a
                 href={COMPANY.phoneHref}
                 className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-7 py-3.5 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50"
               >
-                <Phone className="h-4 w-4 text-sky-500" />
+                <Phone className="h-4 w-4 text-gray-500" />
                 {COMPANY.phone}
               </a>
             </motion.div>
