@@ -26,3 +26,7 @@ export const NAV_LINKS = [
   { hash: "leistungen", label: "Leistungen" },
   { hash: "kontakt", label: "Kontakt" },
 ] as const;
+
+export const NAV_PAGES = [
+  { href: "/ueber-uns", label: "Über uns" },
+] as const;

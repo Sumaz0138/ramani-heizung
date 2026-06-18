@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Wrench, Menu, Phone, X } from "lucide-react";
-import { COMPANY, NAV_LINKS } from "./data";
+import { COMPANY, NAV_LINKS, NAV_PAGES } from "./data";
 
 export default function RamaniHeader() {
   const [open, setOpen] = useState(false);
@@ -48,6 +48,17 @@ export default function RamaniHeader() {
               {link.label}
             </a>
           ))}
+          {NAV_PAGES.map((page) => (
+            <a
+              key={page.href}
+              href={page.href}
+              className={`text-sm font-medium transition-colors hover:text-gray-950 ${
+                pathname === page.href ? "text-gray-950 font-semibold" : "text-gray-700"
+              }`}
+            >
+              {page.label}
+            </a>
+          ))}
         </nav>
 
         {/* Desktop-CTA */}
@@ -84,6 +95,16 @@ export default function RamaniHeader() {
                 className="rounded-lg px-3 py-3 text-base font-medium text-gray-800 transition-colors hover:bg-gray-100"
               >
                 {link.label}
+              </a>
+            ))}
+            {NAV_PAGES.map((page) => (
+              <a
+                key={page.href}
+                href={page.href}
+                onClick={() => setOpen(false)}
+                className="rounded-lg px-3 py-3 text-base font-medium text-gray-800 transition-colors hover:bg-gray-100"
+              >
+                {page.label}
               </a>
             ))}
             <a
