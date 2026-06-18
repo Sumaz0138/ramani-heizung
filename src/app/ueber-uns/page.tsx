@@ -1,15 +1,8 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ShieldCheck, Clock, Star, Wrench, ArrowRight, Mail, Phone, Camera } from "lucide-react";
+import { ShieldCheck, Clock, Star, Wrench, ArrowRight, Mail, Phone } from "lucide-react";
 import { COMPANY } from "@/components/ramani/data";
-
-const stats = [
-  { value: "100%", label: "Meisterbetrieb" },
-  { value: "24/7", label: "Notdienst" },
-  { value: "2026", label: "Gegründet" },
-  { value: "∞", label: "Kundenzufriedenheit" },
-];
 
 const values = [
   {
@@ -75,25 +68,8 @@ export default function UeberUnsPage() {
         </motion.a>
       </section>
 
-      {/* ── STATS ──────────────────────────────────────────────── */}
-      <section className="border-b border-gray-200">
-        <div className="mx-auto grid max-w-5xl grid-cols-2 divide-x divide-y divide-gray-200 sm:grid-cols-4 sm:divide-y-0">
-          {stats.map(({ value, label }, i) => (
-            <motion.div
-              key={label}
-              {...fade(i * 0.06)}
-              className="flex flex-col items-center justify-center gap-1.5 px-6 py-12"
-            >
-              <span className="text-4xl font-extrabold tracking-tight text-gray-900">{value}</span>
-              <span className="text-xs font-medium uppercase tracking-widest text-gray-400">{label}</span>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── STORY + FOTO ───────────────────────────────────────── */}
-      <section className="mx-auto grid max-w-7xl items-center gap-16 px-5 py-24 sm:px-8 lg:grid-cols-2">
-        {/* Text */}
+      {/* ── STORY ──────────────────────────────────────────────── */}
+      <section className="mx-auto max-w-3xl px-5 py-24 sm:px-8">
         <div className="space-y-6">
           <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-orange-500">
             Unsere Geschichte
@@ -107,42 +83,14 @@ export default function UeberUnsPage() {
             "Ramani Gebäudetechnik ist Ihr kompetenter Ansprechpartner für Heizungs-, Sanitär- und Gebäudetechnik. Als Meisterbetrieb, gegründet im Jahr 2026, stehen wir für fachgerechte Handwerksarbeit, moderne Lösungen und einen zuverlässigen Service.",
             "Wir begleiten unsere Kunden von der ersten Beratung bis zur erfolgreichen Umsetzung ihres Projekts. Dabei legen wir besonderen Wert auf eine persönliche Betreuung, transparente Kommunikation und eine sorgfältige Ausführung aller Arbeiten.",
             "Ob Neubau, Modernisierung, Wartung oder Reparatur – wir entwickeln individuelle Lösungen, die technisch durchdacht, wirtschaftlich sinnvoll und auf die Bedürfnisse unserer Kunden abgestimmt sind.",
+            "Als Meisterbetrieb verbinden wir handwerkliche Fachkompetenz mit aktuellem technischem Know-how. Unser Anspruch ist es, jede Aufgabe mit Sorgfalt, Zuverlässigkeit und höchster Professionalität umzusetzen.",
+            "Vertrauen, Termintreue und Kundenzufriedenheit bilden die Grundlage unserer täglichen Arbeit. Wir freuen uns darauf, Sie bei Ihrem Projekt zu unterstützen und gemeinsam die passende Lösung zu finden.",
           ].map((text, i) => (
-            <motion.p key={i} {...fade(0.1 + i * 0.06)} className="text-base leading-relaxed text-gray-500">
+            <motion.p key={i} {...fade(0.08 + i * 0.05)} className="text-base leading-relaxed text-gray-500">
               {text}
             </motion.p>
           ))}
         </div>
-
-        {/* Gründerfoto */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-gray-200 shadow-xl"
-        >
-          {/* Fallback */}
-          <div className="absolute inset-0 grid place-items-center bg-gray-50">
-            <div className="text-center">
-              <Camera className="mx-auto h-10 w-10 text-gray-300" />
-              <p className="mt-3 text-sm text-gray-400">Gründer-Foto</p>
-              <p className="mt-1 text-xs text-gray-300 font-mono">public/gruender.jpg</p>
-            </div>
-          </div>
-          {/* Foto */}
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/gruender.jpg.jpeg')" }}
-          />
-          {/* Gradient overlay */}
-          <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/50 to-transparent" />
-          {/* Badge */}
-          <div className="absolute bottom-5 left-5 rounded-2xl border border-white/20 bg-white/90 px-4 py-3 shadow-md backdrop-blur-md">
-            <p className="text-sm font-bold text-gray-900">Inhaber & Heizungsbaumeister</p>
-            <p className="text-xs text-gray-500">Ramani Gebäudetechnik</p>
-          </div>
-        </motion.div>
       </section>
 
       {/* ── WERTE ──────────────────────────────────────────────── */}
@@ -173,22 +121,10 @@ export default function UeberUnsPage() {
         </div>
       </section>
 
-      {/* ── MANIFEST ───────────────────────────────────────────── */}
-      <section className="border-t border-gray-200 py-24">
-        <div className="mx-auto max-w-3xl px-5 sm:px-8 text-center space-y-5">
-          <motion.p {...fade(0)} className="text-2xl sm:text-3xl font-bold leading-relaxed text-gray-900">
-            Als Meisterbetrieb verbinden wir handwerkliche Fachkompetenz mit aktuellem technischem Know-how.
-          </motion.p>
-          <motion.p {...fade(0.1)} className="text-lg leading-relaxed text-gray-500">
-            Vertrauen, Termintreue und Kundenzufriedenheit bilden die Grundlage unserer täglichen Arbeit.
-          </motion.p>
-        </div>
-      </section>
-
       {/* ── CTA ────────────────────────────────────────────────── */}
-      <section className="border-t border-gray-200 bg-gray-50 py-24">
+      <section className="border-t border-gray-200 py-24">
         <div className="mx-auto max-w-5xl px-5 sm:px-8">
-          <div className="rounded-3xl border border-gray-200 bg-white p-10 sm:p-16 text-center shadow-sm">
+          <div className="rounded-3xl border border-gray-200 bg-gray-50 p-10 sm:p-16 text-center">
             <motion.p {...fade(0)} className="text-xs font-semibold uppercase tracking-widest text-orange-500 mb-4">
               Bereit loszulegen?
             </motion.p>
