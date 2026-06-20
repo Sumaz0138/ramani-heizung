@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Wrench, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { COMPANY, NAV_LINKS, NAV_PAGES } from "./data";
 
 export default function RamaniHeader() {
@@ -31,10 +32,15 @@ export default function RamaniHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8">
         {/* Logo */}
         <a href={isHome ? "#top" : "/"} className="group/logo flex items-center gap-2.5">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-lg shadow-gray-900/20 transition-transform duration-300 group-hover/logo:scale-110">
-            <Wrench className="logo-wrench h-5 w-5 text-white" aria-hidden="true" />
+          <span className="relative h-11 w-[68px] transition-transform duration-300 group-hover/logo:scale-105">
+            <Image
+              src="/ramani.logo.jpeg"
+              alt="Ramani Gebäudetechnik Logo"
+              fill
+              className="object-contain object-left"
+              priority
+            />
           </span>
-          <span className="text-xl font-bold tracking-tight text-gray-900">Ramani</span>
         </a>
 
         {/* Desktop-Navigation */}

@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Wrench, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { COMPANY } from "./data";
 
 export default function RamaniFooter() {
@@ -17,11 +18,13 @@ export default function RamaniFooter() {
           {/* Marke */}
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-gray-900 to-gray-700">
-                <Wrench className="h-5 w-5 text-white" aria-hidden="true" />
-              </span>
-              <span className="text-lg font-bold text-gray-900">
-                Ramani
+              <span className="relative h-14 w-[86px]">
+                <Image
+                  src="/ramani.logo.jpeg"
+                  alt="Ramani Gebäudetechnik Logo"
+                  fill
+                  className="object-contain object-left"
+                />
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-600">
