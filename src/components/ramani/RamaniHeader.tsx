@@ -29,10 +29,18 @@ export default function RamaniHeader() {
           : "border-b border-white/10 bg-white/80 backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8">
+      <div
+        className={`mx-auto flex max-w-7xl items-center justify-between px-5 transition-all duration-300 sm:px-8 ${
+          scrolled ? "py-3" : "py-6"
+        }`}
+      >
         {/* Logo */}
         <a href={isHome ? "#top" : "/"} className="group/logo flex items-center gap-2.5">
-          <span className="relative h-11 w-[68px] transition-transform duration-300 group-hover/logo:scale-105">
+          <span
+            className={`relative transition-all duration-300 group-hover/logo:scale-105 ${
+              scrolled ? "h-11 w-[68px]" : "h-16 w-[100px]"
+            }`}
+          >
             <Image
               src="/ramani.logo.jpeg"
               alt="Ramani Gebäudetechnik Logo"
