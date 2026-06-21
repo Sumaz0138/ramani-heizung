@@ -38,7 +38,7 @@ export default function RamaniHeader() {
         <a href={isHome ? "#top" : "/"} className="group/logo flex items-center gap-2.5">
           <span
             className={`relative transition-all duration-300 group-hover/logo:scale-105 ${
-              scrolled ? "h-14 w-[86px]" : "h-20 w-[120px]"
+              scrolled ? "h-16 w-[94px]" : "h-28 w-[164px]"
             }`}
           >
             <Image
