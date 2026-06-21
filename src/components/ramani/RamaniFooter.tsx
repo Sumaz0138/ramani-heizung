@@ -20,7 +20,7 @@ export default function RamaniFooter() {
             <div className="flex items-center gap-2.5">
               <span className="relative h-14 w-[86px]">
                 <Image
-                  src="/ramani.logo.jpeg"
+                  src="/ramani-logo.png"
                   alt="Ramani Gebäudetechnik Logo"
                   fill
                   className="object-contain object-left"

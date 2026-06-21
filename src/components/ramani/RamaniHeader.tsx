@@ -42,7 +42,7 @@ export default function RamaniHeader() {
             }`}
           >
             <Image
-              src="/ramani.logo.jpeg"
+              src="/ramani-logo.png"
               alt="Ramani Gebäudetechnik Logo"
               fill
               className="object-contain object-left"
